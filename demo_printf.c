@@ -6,7 +6,7 @@
 /*   By: rwatanab <wtnbrn1999@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 22:19:00 by rwatanab          #+#    #+#             */
-/*   Updated: 2022/10/14 01:23:43 by rwatanab         ###   ########.fr       */
+/*   Updated: 2022/10/14 01:25:42 by rwatanab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,6 @@ void	demo_printf(const char *format, ...)
 
 int	main(void)
 {
-	demo_printf("ABCDEFGHIJKLMNPOQRSTUVWXYZ");
+	demo_printf("ABCDEFG");
 	return (0);
 }
