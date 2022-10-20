@@ -6,7 +6,7 @@
 /*   By: rwatanab <wtnbrn1999@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 00:17:47 by rwatanab          #+#    #+#             */
-/*   Updated: 2022/10/20 17:59:15 by rwatanab         ###   ########.fr       */
+/*   Updated: 2022/10/20 19:34:06 by rwatanab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int	main(void)
 	unsigned int	test7_1 = 4;
 	unsigned int	test7_2 = 42;
 	ssize_t			count = 0;
+	char			*test9 = NULL;
 
 	printf("\x1b[31m");
 	printf("\n-#-#-#-#-#-test start-#-#-#-#-#-\n");
@@ -91,6 +92,13 @@ int	main(void)
 	count = printf("orgnl : Genius is 1%% inspiration and 99%% perspiration.\n");
 	printf("\x1b[32m----> count = %zd\x1b[39m\n", count);
 	count = ft_printf("mimic : Genius is 1%% inspiration and 99%% perspiration.\n");
+	printf("\x1b[32m----> count = %zd\x1b[39m\n", count);
+
+	printf("\n>test9--------------------------\n");
+	printf("(char *test9 = NULL)\n");
+	count = printf("orgnl : %%s -> %s, %%p -> %p\n", test9, test9);
+	printf("\x1b[32m----> count = %zd\x1b[39m\n", count);
+	count = ft_printf("mimic : %%s -> %s, %%p -> %p\n", test9, test9);
 	printf("\x1b[32m----> count = %zd\x1b[39m\n", count);
 	
 	printf("\x1b[31m");
